@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family: 'Roboto Mono', monospace;*/
+}
+
+button {
+    padding: 4px;
+    background: rgb(52, 132, 155);
+    border: 4px solid aliceblue;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+button:hover {
+    background: aliceblue;
+    border: 4px solid aliceblue;
+    color: rgb(52, 132, 155);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.index-page,
+.aguachile-page,
+.horchata-page,
+.tamagoyaki-page,
+.about-uspage {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../imgs/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.aguachile-page {
+    background-image: url("../imgs/aguachile.jpg");
+}
+.horchata-page {
+    background-image: url("../imgs/horchata2.jpg");
+}
+.tamagoyaki-page {
+    background-image: url("../imgs/tamagoyaki.jpg");
+}
+.about-uspage {
+    background-image: url("../imgs/aboutus.jpg");
+}
+.navbar {
+    background-color: rgba(240, 248, 255, 0.6);
+    font-size: large;
+    font-weight: bolder;
+    overflow: hidden;
+}
+.navbar li {
+    float: left;
+    margin: 1% 3%;
+    list-style-type: none;
+    vertical-align: baseline;
+    height: 30px;
+}
+
+.navbar li:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(52, 132, 155);
+}
+
+.title-container {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    background-color: rgba(240, 248, 255, 0.6);
+    font-weight: bolder;
+    font-size: x-large;
+}
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+.recipe {
+    background-color: rgba(52, 132, 155, 0.9);
+    width: 30%;
+    height: 100vh;
+    text-align: center;
+    color: aliceblue;
+    padding: 0px 20px 0px 20px;
+}
+.recipe * {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.recipe h1 {
+    font-size: xx-large;
+}
+
+.recipe h2 {
+    font-size: large;
+}
+
+.recipe ul ol {
+    margin-top: 0;
+    text-align: justify;
+}
+
+.in_list li {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.pre_list li {
+    margin-top: 0;
+    margin-bottom: 0%;
+    text-align: left;
+}
+
+.profile1 {
+    position: absolute;
+    top: 20%;
+    background-color: rgba(78, 151, 122, 0.9);
+    width: 20%;
+    text-align: left;
+    color: aliceblue;
+    padding: 20px;
+    left: 5%;
+}
+
+.profile2 {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(66, 134, 197, 0.9);
+    width: 20%;
+    text-align: left;
+    color: aliceblue;
+    padding: 20px;
+    right: 5%;
+}
+
+.profile1 h1,
+.profile2 h1 {
+    text-align: center;
+}
+.flag-img {
+    float: right;
+    width: 90px;
+    filter: brightness(90%);
+    margin-left: 2px;
+}
+.button2 {
+    position: absolute;
+    top: 90%;
+    left: 45%;
+}
