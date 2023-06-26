@@ -160,3 +160,55 @@ a {
     top: 90%;
     left: 45%;
 }
+
+/*---------------------------- FOOTER ----------------------------*/
+
+.footerlogo-img {
+    width: 20vw;
+}
+
+.footerlink-img {
+    width: 3vw;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    background-color: rgba(240, 248, 255, 0.6);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerinfo {
+    text-align: center;
+}
+
+.footercopyright {
+    margin-right: 5px;
+}
+
+.footermenu li:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(52, 132, 155);
+}
+
+/*-- Mobile Phone --*/
+@media (max-width: 480px) {
+    .footer-container {
+        flex-direction: column;
+        row-gap: 10px;
+    }   
+    
+    .footerlogo-img {
+        width: 70vw;
+    }
+        
+    .footerlink-img {
+        width: 10vw;
+    }
+}
