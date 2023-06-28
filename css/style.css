@@ -29,14 +29,6 @@ a {
     color: inherit;
 }
 
-.aguachile-page {
-    background-image: url("../imgs/aguachile.jpg");
-}
-
-.horchata-page {
-    background-image: url("../imgs/horchata2.jpg");
-}
-
 .tamagoyaki-page {
     background-image: url("../imgs/tamagoyaki.jpg");
 }
@@ -50,6 +42,7 @@ nav {
     z-index: 2;
     background-color: rgba(233, 240, 240, 0.781);
     width: 100%;
+    top: 0
 }
 
 .navbar {
@@ -57,7 +50,7 @@ nav {
     font-size: large;
     font-weight: bolder;
     padding: 1rem;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
 }
 
@@ -79,7 +72,6 @@ nav {
 
 .indexmain {
     height: 100vh;
-    width: 100vw;
     overflow: hidden;
 }
 
@@ -104,6 +96,34 @@ nav {
     transform: translate(-50%, -50%);
 }
 
+.recipe {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'text1'
+        'image';
+    margin-top: 50px;
+}
+
+.image {
+    grid-area: image;
+}
+
+.image img {
+    width: 100%;
+}
+
+.text {
+    grid-area: text1;
+    background-color: rgba(52, 132, 155, 0.9);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+}
+
 /*Break point for desktop*/
 @media only screen and (min-width: 1024px) {
     .navbar-small {
@@ -119,56 +139,15 @@ nav {
     }
 
     .subtitle-index {
+        font-size: 4vw;
         top: 60%;
     }
-}
 
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
-.recipe {
-    background-color: rgba(52, 132, 155, 0.9);
-    width: 30%;
-    height: 100vh;
-    text-align: center;
-    color: aliceblue;
-    padding: 0px 20px 0px 20px;
-}
-
-.recipe * {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.recipe h1 {
-    font-size: xx-large;
-}
-
-.recipe h2 {
-    font-size: large;
-}
-
-.recipe ul ol {
-    margin-top: 0;
-    text-align: justify;
-}
-
-.in_list li {
-    margin-top: 0;
-    margin-bottom: 0;
-    list-style: none;
-    text-align: left;
-}
-
-.pre_list li {
-    margin-top: 0;
-    margin-bottom: 0%;
-    text-align: left;
+    .recipe {
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'text1 image';
+    }
 }
 
 .profile1 {
@@ -221,9 +200,8 @@ nav {
 }
 
 footer {
-    position: absolute;
     width: 100%;
-    bottom: 0%;
+    bottom: 0;
     background-color: rgba(240, 248, 255, 0.6);
 }
 
