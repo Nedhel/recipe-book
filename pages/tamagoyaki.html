@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,41 +10,114 @@
 </head>
 
 <body>
-    <section class="tamagoyaki-page">
-        <section class="recipe left">
-            <h1>Tamagoyaki</h1>
-            <span>~ Japanese food ~</span>
+    <!-- NAVBAR -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="../pages/tamagoyaki.html">Tamagoyaki</a></li>
+            <li><a href="../pages/horchata.html">Horchata</a></li>
+            <li><a href="../pages/aguachile.html">Aguachile</a></li>
+            <li><a href="../pages/aboutus.html">About us</a></li>
+        </ul>
+        <ul class="navbar-small">
+            <li><img src="../imgs/menusmall.svg" alt="" /></li>
+        </ul>
+    </nav>
 
-            <!--This is a simple introduction.-->
-            <p>Tamagoyaki is Japanese rolled omelettes. It is a quite common food in Japan.
-                Japanese usually eat it for breakfast or lunch.
-                You can make it with just eggs, sugar, soy source, and oil.<br>
-                Then, let's cook!</p>
+    <!-- TAMAGOYAKI MAIN -->
+    <main>
+        <section class="recipe">
+            <div class="text">
+                <h1>Tamagoyaki</h1>
+                <span>~ Japanese food ~</span>
 
-            <h2>Ingredients</h2>
-            <ul class="in_list">
-                <li>2 eggs</li>
-                <li>2 teaspoons sugar</li>
-                <li>1 teaspoon soy source</li>
-                <li>oil</li>
-            </ul>
+                <p>Tamagoyaki is Japanese rolled omelettes. It is a quite common food in Japan.
+                    Japanese usually eat it for breakfast or lunch.
+                    You can make it with just eggs, sugar, soy source, and oil.<br>
+                    Then, let's cook!</p>
 
-            <h2>Preparation</h2>
-            <ol class="pre_list">
-                <li>In a medium bowl, combine eggs, salt, sugar and soy sauce. Mix until everything is dissolved.
-                </li>
-                <li>Heat a tamagoyaki pan* over medium-high heat. Drip a little oil into the pan.
-                <br>*If you don't have a tamagoyaki pan, you can use a frying pan.</li>
-                <li>Pour a third of the egg mixture into pan and quickly swirl to cover the entire pan.</li>
-                <li>When the egg is half-set, gently roll the egg.</li>
-                <li>With the rolled egg still in the pan, pour in another third of the egg mixture. When the egg is
-                    half-set, roll the omelette toward you. Repeat with the rest of the egg mixture.</li>
-                <li>Slice into bite-sized pieces.</li>
-            </ol>
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>2 eggs</li>
+                    <li>2 teaspoons sugar</li>
+                    <li>1 teaspoon soy source</li>
+                    <li>oil</li>
+                </ul>
 
-            <button><a href="../index.html">Go back Home</a></button>
+                <h2>Preparation</h2>
+                <ol>
+                    <li>In a medium bowl, combine eggs, salt, sugar and soy sauce. Mix until everything is dissolved.
+                    </li>
+                    <li>Heat a tamagoyaki pan* over medium-high heat. Drip a little oil into the pan.
+                        <br>*If you don't have a tamagoyaki pan, you can use a frying pan.
+                    </li>
+                    <li>Pour a third of the egg mixture into pan and quickly swirl to cover the entire pan.</li>
+                    <li>When the egg is half-set, gently roll the egg.</li>
+                    <li>With the rolled egg still in the pan, pour in another third of the egg mixture. When the egg is
+                        half-set, roll the omelette toward you. Repeat with the rest of the egg mixture.</li>
+                    <li>Slice into bite-sized pieces.</li>
+                </ol>
+
+                <button><a href="../index.html">Go back Home</a></button>
+
+            </div>
+            <div class="image">
+                <img src="../imgs/tamagoyaki.jpg">
+            </div>
         </section>
-    </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <section class="footer-container">
+            <div class="footerinfo">
+                <img
+                    class="footerlogo-img"
+                    src="../imgs/logo.png"
+                    alt="This is a logo of our website."
+                />
+                <p>contact@recipebook.com</p>
+            </div>
+            <ul class="footermenu">
+                <li><a href="../pages/tamagoyaki.html">Tamagoyaki</a></li>
+                <li><a href="../pages/horchata.html">Horchata</a></li>
+                <li><a href="../pages/aguachile.html">Aguachile</a></li>
+                <li><a href="../pages/aboutus.html">About us</a></li>
+            </ul>
+            <div class="footerlink">
+                <a class="footerlink-a" href="https://amazon.co.jp"
+                    ><img
+                        class="footerlink-img"
+                        src="../imgs/icon-amazon.svg"
+                        alt=""
+                /></a>
+                <a class="footerlink-a" href="https://facebook.co.jp"
+                    ><img
+                        class="footerlink-img"
+                        src="../imgs/icon-facebook.svg"
+                        alt=""
+                /></a>
+                <a class="footerlink-a" href="https://instagram.co.jp"
+                    ><img
+                        class="footerlink-img"
+                        src="../imgs/icon-instagram.svg"
+                        alt=""
+                /></a>
+                <a class="footerlink-a" href="https://twitter.co.jp"
+                    ><img
+                        class="footerlink-img"
+                        src="../imgs/icon-twitter.svg"
+                        alt=""
+                /></a>
+                <a class="footerlink-a" href="https://youtube.co.jp"
+                    ><img
+                        class="footerlink-img"
+                        src="../imgs/icon-youtube.svg"
+                        alt=""
+                /></a>
+            </div>
+            <p class="footercopyright">© 2023 Chinatsu and Zalpa</p>
+        </section>
+    </footer>
 </body>
 
 </html>
