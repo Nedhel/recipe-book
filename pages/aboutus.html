@@ -6,37 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/aboutus.css">
 </head>
 
 <body>
-    <section class="about-uspage">
-        <section class="profile1">
-            <img src="../imgs/mexicoflag.png" alt="mexico flag" class="flag-img">
-            <h1>Zalpa</h1>
-            <p>I'm a head chef of a famous Mexican restaurant.
-                I was born in Urhuapan Michoacan, 
-                it is a small city within an ancient region called Purhepecha. <br>
-                Michoacan cuisine has been inscribed in 2010 on the Representative
-                List of the Intangible Cultural Heritage of Humanity.
-            </p>
-        </section>
+    <!--NAV BAR-->
+    <nav>
+        <ul class="navbar">
+            <li><a href="../pages/tamagoyaki.html">Tamagoyaki</a></li>
+            <li><a href="../pages/horchata.html">Horchata</a></li>
+            <li><a href="../pages/aguachile.html">Aguachile</a></li>
+            <li><a href="../pages/aboutus.html">About us</a></li>
+        </ul>
+        <ul class="navbar-small">
+            <li><img src="../imgs/menusmall.svg" alt="" /></li>
+        </ul>
+    </nav>
 
-        <section class="profile2">
-            <img src="../imgs/japanflag.png" alt="mexico flag" class="flag-img">
-            <h1>Chinatsu</h1>
-            <p>I'm a Japanese culinary researcher.
-                I was born in Tokyo, Japan. 
-                I hold my cooking class in Canada now,
-                after I worked at some Japanese restaurants. <br>
-                My recipe books are published all over the world.
-                I am on a cooking show on TV every Friday and I have my Youtube channel.
-            </p>
-        </section>
+    <!--MAIN ABOUT-->
+    <main class="about-uspage">
+        <img src="../imgs/aboutus.jpg"
+            alt="This is a picture of us, the man on left is Zalpa, the women on right is Chinatsu."
+            class="background-aboutus" />
+        <section class="profile">
+            <section class="profile1">
+                <img src="../imgs/mexicoflag.png" alt="mexico flag" class="flag-img">
+                <h1>Zalpa</h1>
+                <p>I'm a head chef of a famous Mexican restaurant.
+                    I was born in Urhuapan Michoacan,
+                    it is a small city within an ancient region called Purhepecha. <br>
+                    Michoacan cuisine has been inscribed in 2010 on the Representative
+                    List of the Intangible Cultural Heritage of Humanity.
+                </p>
+            </section>
 
+            <section class="profile2">
+                <img src="../imgs/japanflag.png" alt="mexico flag" class="flag-img">
+                <h1>Chinatsu</h1>
+                <p>I'm a Japanese culinary researcher.
+                    I was born in Tokyo, Japan.
+                    I hold my cooking class in Canada now,
+                    after I worked at some Japanese restaurants. <br>
+                    My recipe books are published all over the world.
+                    I am on a cooking show on TV every Friday and I have my Youtube channel.
+                </p>
+            </section>
+        </section>
         <button class="button2"><a href="../index.html">Go back Home</a></button>
+    </main>
 
-    </section>
+    <!--FOOTER-->
+    <footer>
+        <section class="footer-container">
+            <div class="footerinfo">
+                <img class="footerlogo-img" src="../imgs/logo.png" alt="This is a logo of our website." />
+                <p>contact@recipebook.com</p>
+            </div>
+            <ul class="footermenu">
+                <li><a href="tamagoyaki.html">Tamagoyaki</a></li>
+                <li><a href="horchata.html">Horchata</a></li>
+                <li><a href="aguachile.html">Aguachile</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+            </ul>
+            <div class="footerlink">
+                <a class="footerlink-a" href="https://amazon.co.jp"><img class="footerlink-img"
+                        src="../imgs/icon-amazon.svg" alt="" /></a>
+                <a class="footerlink-a" href="https://facebook.co.jp"><img class="footerlink-img"
+                        src="../imgs/icon-facebook.svg" alt="" /></a>
+                <a class="footerlink-a" href="https://instagram.co.jp"><img class="footerlink-img"
+                        src="../imgs/icon-instagram.svg" alt="" /></a>
+                <a class="footerlink-a" href="https://twitter.co.jp"><img class="footerlink-img"
+                        src="../imgs/icon-twitter.svg" alt="" /></a>
+                <a class="footerlink-a" href="https://youtube.co.jp"><img class="footerlink-img"
+                        src="../imgs/icon-youtube.svg" alt="" /></a>
+            </div>
+            <p class="footercopyright">© 2023 Chinatsu and Zalpa</p>
+        </section>
+    </footer>
 </body>
 
 </html>

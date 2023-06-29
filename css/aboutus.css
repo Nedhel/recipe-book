@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family: 'Roboto Mono', monospace;*/
+}
+
+button {
+    padding: 4px;
+    background: rgb(52, 132, 155);
+    border: 4px solid aliceblue;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+button:hover {
+    background: aliceblue;
+    border: 4px solid aliceblue;
+    color: rgb(52, 132, 155);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.tamagoyaki-page {
+    background-image: url("../imgs/tamagoyaki.jpg");
+}
+
+.about-uspage {
+    background-image: url("../imgs/aboutus.jpg");
+}
+
+nav {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(233, 240, 240, 0.781);
+    width: 100%;
+    top: 0
+}
+
+.navbar {
+    display: none;
+    font-size: large;
+    font-weight: bolder;
+    padding: 1rem;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.navbar li {
+    padding: 0 4px 0 4px;
+    border-left: 4px solid rgb(52, 132, 155);
+}
+
+.navbar li:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(52, 132, 155);
+}
+
+/*Styel for Navbar design mobile first*/
+.navbar-small {
+    display: flex;
+    width: 100%;
+}
+
+.indexmain {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-picture {
+    width: 330%;
+    transform: translateX(-20%);
+}
+
+.title-index {
+    font-size: 7vw;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subtitle-index {
+    font-size: 5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.recipe {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'text1'
+        'image';
+    margin-top: 50px;
+}
+
+.image {
+    grid-area: image;
+}
+
+.image img {
+    width: 100%;
+}
+
+.text {
+    grid-area: text1;
+    background-color: rgba(52, 132, 155, 0.9);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+}
+
+/*Break point for desktop*/
+@media only screen and (min-width: 1024px) {
+    .navbar-small {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .background-picture {
+        width: 130%;
+    }
+
+    .subtitle-index {
+        font-size: 4vw;
+        top: 60%;
+    }
+
+    .recipe {
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'text1 image';
+    }
+}
+
+/*----------------------------ABOUT US----------------------------*/
+.background-aboutus {
+    width: 100%;
+}
+
+.profile {
+    font-size: 1.5vw;
+}
+
+.profile1 {
+    position: absolute;
+    top: 15vw;
+    background-color: rgba(78, 151, 122, 0.9);
+    width: 30%;
+    text-align: left;
+    color: aliceblue;
+    padding: 2vw;
+    left: 5%;
+}
+
+.profile2 {
+    position: absolute;
+    top: 30vw;
+    background-color: rgba(66, 134, 197, 0.9);
+    width: 30%;
+    text-align: left;
+    color: aliceblue;
+    padding: 2vw;
+    right: 5%;
+}
+
+.profile1 h1,
+.profile2 h1 {
+    text-align: center;
+}
+
+.flag-img {
+    float: right;
+    width: 30%;
+    filter: brightness(90%);
+    margin-left: 2px;
+}
+
+.button2 {
+    position: absolute;
+    top: 60vw;
+    left: 45%;
+}
+
+/*--    Tablet    --*/
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+    .profile1,.profile2 {
+        font-size: 2vw;
+    }
+}
+
+
+/*-- Mobile Phone --*/
+@media (max-width: 480px) {
+    .profile1,.profile2 {
+        position: static; /* to reset their position */
+        width: 50%;
+        font-size: 3vw;
+    }
+
+    .profile {
+        display: flex;
+    }
+    .button2 {
+        position: static;
+        margin-left: 40%;
+    }
+}
+
+/*---------------------------- FOOTER ----------------------------*/
+.footerlogo-img {
+    width: 20vw;
+}
+
+.footerlink-img {
+    width: 3vw;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(240, 248, 255, 0.6);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerinfo {
+    text-align: center;
+}
+
+.footercopyright {
+    margin-right: 5px;
+}
+
+.footermenu li:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(52, 132, 155);
+}
+
+/*-- Mobile Phone --*/
+@media (max-width: 480px) {
+    .footer-container {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .footerlogo-img {
+        width: 70vw;
+    }
+
+    .footerlink-img {
+        width: 10vw;
+    }
+}
